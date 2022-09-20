@@ -1,0 +1,47 @@
+<div class="slider" *ngIf="imagenes.length>0">
+
+        <div class="flecha_izquierda col-auto">
+            <button type="button" class="btn btn-blue-light" (click)="retroceder()">
+                <i class="fa fa-arrow-left"></i>
+            </button>
+        </div>
+        <div  class="imagen align-items-center justify-content-center" [ngStyle]="{'background-image': 'url(' + imagenes[posiciones_actuales.img1].url + ')'}" >
+
+            <div class="row m-3">
+                <div class="col-12 text-center">
+                    <h5>{{imagenes[posiciones_actuales.img1].detalles}}</h5>
+                    <span class="pt-3">{{imagenes[posiciones_actuales.img1].nombre}}</span>
+                    <div class="avatar mx-auto" [ngStyle]="{'background-image': 'url(' + imagenes[posiciones_actuales.img1].url_avatar + ')'}"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="imagen align-items-center justify-content-center" [ngStyle]="{'background-image': 'url(' + imagenes[posiciones_actuales.img2].url + ')'}">
+
+            <div class="row m-3">
+                <div class="col-12 text-center">
+                    <h5>{{imagenes[posiciones_actuales.img2].detalles}}</h5>
+                    <span class="pt-3">{{imagenes[posiciones_actuales.img2].nombre}}</span>
+                    <div class="avatar mx-auto" [ngStyle]="{'background-image': 'url(' + imagenes[posiciones_actuales.img2].url_avatar + ')'}"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="imagen align-items-center justify-content-center" [ngStyle]="{'background-image': 'url(' + imagenes[posiciones_actuales.img3].url + ')'}">
+
+            <div class="row m-3">
+                <div class="col-12 text-center">
+                    <h5>{{imagenes[posiciones_actuales.img3].detalles}}</h5>
+                    <span class="pt-3">{{imagenes[posiciones_actuales.img3].nombre}}</span>
+                    <div class="avatar mx-auto" [ngStyle]="{'background-image': 'url(' + imagenes[posiciones_actuales.img3].url_avatar + ')'}"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="flecha_derecha col-auto">
+            <button type="button" class="btn  btn-blue-light" (click)="avanzar()">
+                <i class="fa fa-arrow-right"></i>
+            </button>
+        </div>
+      
+    </div> 

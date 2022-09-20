@@ -1,0 +1,112 @@
+<app-menu></app-menu>
+<app-banner ></app-banner>
+
+<div class="row justify-content-center mt-xl-5">
+    <div class="col-auto text-center">
+        <button type="button" class="btn btn-green-light rounded-lg" 
+            style="border-radius: 50px !important;font-size: small;">
+            ¿Necesitas ayuda?</button>
+        <h4 class="mt-2">Titulo de la sección</h4>
+    </div>
+</div>
+<div class="row justify-content-center mt-xl-5">
+    <div class="col-2 text-center">
+        <img src="/assets/imgL1.PNG">
+        <h4 class="mt-2">Titulo de la sección</h4>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec.</span>
+    </div>
+    <div class="col-2 offset-1 text-center">
+        <img src="/assets/imgL2.PNG">
+        <h4 class="mt-2">Titulo de la sección</h4>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec.</span>
+    </div>
+    <div class="col-2 offset-1 text-center">
+        <img src="/assets/imgL3.PNG">
+        <h4 class="mt-2">Titulo de la sección</h4>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec.</span>
+    </div>        
+</div>
+<div class="row justify-content-center mt-xl-5">
+    <div class="col-2 text-center">
+        <img src="/assets/flecha.PNG">
+    </div>
+    <div class="col-2 offset-1 text-center">
+        <img src="/assets/lapso.PNG">
+    </div>
+    <div class="col-2 offset-1 text-center">
+        <img src="/assets/flecha.PNG" 
+        style="
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        ">
+    </div>        
+</div>
+<div class="row justify-content-center mt-xl-5">
+    <div class="col-6 text-center">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Vestibulum fermentum lacus nec tincidunt pulvinar. 
+            Phasellus aliquam.
+        </p>
+    </div>    
+</div>
+<div class="row justify-content-center">
+    <div class="col-auto">
+        <img src="/assets/ovalo.PNG">
+    </div>    
+</div>
+<div class="row justify-content-center">
+    <div class="col-6 text-center">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        </p>
+    </div>    
+</div>
+
+<div class="row">
+    <div class="col-4 offset-1">
+        <button type="button" class="btn btn-green-light" 
+        style="border-radius: 50px !important;font-size: small;">
+        Texto</button>
+        <h2>Contenido extra</h2>
+        <h2>Lorem ipsum dolor sit amet elit.</h2>
+        <p>Lorem ipsum dolor sit amet, consecteur adipiscing elit.</p>
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn pl-5 pr-5" [ngClass]="{'btn-primary': opcionTiempoPlan=='Mes'}" (click)="opcionTiempoPlan='Mes'">Mes</button>
+            <button type="button" class="btn pl-5 pr-5" [ngClass]="{'btn-primary': opcionTiempoPlan=='Año'}" (click)="opcionTiempoPlan='Año'">Año</button>
+        </div>
+        
+       
+    </div>
+    <div class="col-6 ">
+        <div class="row">
+            <app-ficha-oferta [plan]="plan1" [tiempoPlan]="opcionTiempoPlan" class="col-6 justify-content-center"></app-ficha-oferta>
+            <app-ficha-oferta [plan]="plan2" [tiempoPlan]="opcionTiempoPlan" class="col-6 justify-content-center"></app-ficha-oferta>        
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 pt-3 text-center">
+                <a href="#" style="color:#777;">
+                    *<span style="text-decoration-line: underline;">Terminos</span>y condiciones
+                </a>
+            </div>
+        </div>        
+    </div>
+</div>
+
+
+<div class="row justify-content-center mt-xl-5">
+    <div class="col-auto text-center">
+        <button type="button" class="btn btn-green-light rounded-lg" 
+            style="border-radius: 50px !important;font-size: small;">
+            Eventos</button>
+        <h4 class="mt-2">Titulo de la sección</h4>
+        <span>Lorem ipsum dolor sit amet, consecteur adipiscing elit.</span>
+    </div>
+</div>
+<div class="row justify-content-center mt-xl-5 ">
+    <div class="col-10 ">
+        <app-slider class="pt-3" [imagenes]="imagenes"></app-slider>
+    </div>
+</div>
+<hr>
+<app-footer></app-footer>

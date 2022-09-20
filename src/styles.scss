@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: sourcesanspro;
+    src: url(assets/fonts/source-sans-pro/SourceSansPro-Regular.ttf) format("sourcesanspro");
+}
+
+*{
+    font-family: 'sourcesanspro', 'arial', sans-serif;
+}
+
+.logo {
+    height: 70px;
+}
+
+.btn-blue-light{
+    background: #dae6fd !important;
+    color: #007bff !important;
+    border: 0px !important;
+}
+
+.btn-green-light{
+    background: #dae6fd !important;
+    color: #048549 !important;
+    border: 0px !important;
+}
+
+.btn-header-light {
+    color: #777;
+    font-size: medium;
+}

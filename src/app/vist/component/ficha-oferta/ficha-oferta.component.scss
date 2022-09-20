@@ -1,0 +1,23 @@
+.ficha-oferta{
+    width:200px;
+    box-shadow:0 0 11px -5px black;
+}
+
+.ficha-oferta .header {
+    background: #377dff;
+    color: white;
+}
+.ficha-oferta span.precio {
+    font-size: xx-large;
+    font-weight: bold;
+}
+.ficha-oferta span.simbolo-divisa {
+    font-size: xx-small;
+    position: absolute;
+}
+
+.ficha-oferta .body ul {
+    list-style-image: url("/assets/img/check-p.png");
+    margin-bottom:0px;
+}
+
