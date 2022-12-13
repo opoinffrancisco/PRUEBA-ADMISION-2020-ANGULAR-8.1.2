@@ -1,4 +1,4 @@
 export const environment = {
-  url_servidor: "http://jsonplaceholder.typicode.com",
+  url_servidor: "https://jsonplaceholder.typicode.com",
   production: true
 };
