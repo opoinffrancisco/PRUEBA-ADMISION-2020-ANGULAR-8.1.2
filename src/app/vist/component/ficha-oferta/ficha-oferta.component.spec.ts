@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FichaOfertaComponent } from './ficha-ofera.component';
+import { FichaOfertaComponent } from './ficha-oferta.component';
 
 describe('FichaOfertaComponent', () => {
   let component: FichaOfertaComponent;
