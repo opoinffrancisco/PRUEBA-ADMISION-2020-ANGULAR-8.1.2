@@ -13,7 +13,6 @@ import { SliderComponent } from './vist/component/slider/slider.component';
 import { FooterComponent } from './vist/component/footer/footer.component';
 import { FichaOfertaComponent } from './vist/component/ficha-oferta/ficha-oferta.component';
 
-import { configService } from './api/config.service';
 import { UserService } from './api/user.service';
 
 @NgModule({
@@ -34,7 +33,6 @@ import { UserService } from './api/user.service';
     HttpModule
   ],
   providers: [
-    configService,
     UserService
   ],
   bootstrap: [AppComponent]

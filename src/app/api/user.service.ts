@@ -1,20 +1,21 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
-import { configService } from './config.service';
+import { environment } from './../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
 
+  private ENV = environment;
+
   constructor(
-    public http: Http,
-    public config : configService
+    public http: Http
   ){ }
   
   getUser(callback){
       
-    this.http.get(this.config.url_servidor+'/users',{}).subscribe((result: any) => {
+    this.http.get(this.ENV.url_servidor+'/users',{}).subscribe((result: any) => {
         console.log(result);
         callback(result);
     },(error) => {
